@@ -1,0 +1,426 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+strong {
+  font-weight: bold;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: calibri;
+  src: url(fonts/calibri.ttf);
+}
+
+@font-face {
+  font-family: Poppins-bold;
+  src: url(fonts/Poppins-Bold.otf);
+}
+
+/* ========== PHẦN XỬ LÝ CSS ========== */
+/* PHẦN XỬ LÝ MAIN NAVBAR  */
+
+.nav-text {
+  padding: 0 20px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  font-family: calibri;
+  font-size: large;
+  color: rgb(90, 90, 90);
+}
+/* END PHẦN XỬ LÝ MAIN NAVBAR */
+/* PHẦN XỬ LÝ OWL CAROUSEL */
+.shoe-brands {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.brands-body {
+  font-family: calibri;
+}
+
+.item img {
+  height: 200px;
+}
+/* END PHẦN XỬ LÝ OWL CAROUSEL */
+/* PHẦN XỬ LÝ BANNER GENDER */
+.gender img {
+  width: 100%;
+  /* height: 250px; */
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  transform: translatey(-100px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2,
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+/* END PHẦN XỬ LÝ BANNER GENDER */
+/* PHẦN XỬ LÝ ABOUT US & NEWS */
+.shop-img img{
+  width: 100%;
+}
+.about-us {
+  background-color: rgba(109, 109, 109, 0.096);
+}
+.about-shop {
+  text-align: justify;
+}
+.shop-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+/* END PHẦN XỬ LÝ ABOUT US & NEWS */
+/* PHẦN XỬ LÝ FEEDBACK */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: calibri;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/* END PHẦN XỬ LÝ FEEDBACK */
+/* PHẦN XỬ LÝ FOOTER */
+.footer-text {
+	font-family: calibri;
+}
+
+.about-for-us {
+  display: inline-block;
+  padding: 20px 0;
+  font-family: calibri;
+  font-size: 30px;
+  font-weight: bolder;
+  background-image: linear-gradient(to right, #30CFD0 0%, #2825ee 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+/* END PHẦN XỬ LÝ FOOTER */
+.cart-url{
+  display: inline-block;
+}
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+a.text-hover:hover {
+  color: orange !important;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: orange !important;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  border-bottom: 3px solid orange !important;
+}
+
+p.text-header {
+  font-size: 25px;
+}
+
+hr.line-header {
+  width: 60px;
+  height: 2px;
+  padding: 2px 0;
+  border-radius: 5px;
+}
+
+hr.line-header::before {
+  display: inline-block;
+    content: "";
+    border-top: .4rem solid orange;
+    width: 6rem;
+    border-radius: 4px;
+    transform: translateY(-0.7rem);
+    transform: translateX(-1.1rem);
+}
+
+.card-title {
+  font-size: 17px;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+a.btn-sale:hover{
+  border: 2px solid orange;
+  color: orange;
+}
+
+.details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.one:nth-child(1) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.one img {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 999999;
+}
+
